@@ -1,0 +1,237 @@
+/* Maven Pro (Font) */
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&display=swap');
+
+/* Open Sans (Font) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.transition-fade {
+    opacity: 1;
+    transition: 500ms;
+    transform: translateX(0);
+    transform-origin: left;
+}
+
+html.is-animating .transition-fade {
+    opacity: 1;
+    transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.transition-swipe {
+    transition: 500ms;
+    transform: translateY(0);
+}
+
+html.is-animating .transition-fade {
+    transform: translateY(100%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    width: 12rem;
+}
+
+.logo__text {
+    position: absolute;
+    top: 14px;
+    margin-left: .5rem;
+    color: #3ecf8e;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.header-logo {
+    width: 50px;
+    height: 50px;
+}
+
+
+.greetings__container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 15;
+}
+
+.greet__img {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.greet-main {
+    width: 700px;
+    height: 350px;
+    margin-top: 1rem;
+    border-radius: 15px;
+}
+
+.greet__text {
+    position: absolute;
+    top: 24rem;
+    text-align: center;
+}
+
+.title__greet {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.emphasis-text {
+    font-family: "Maven Pro";
+    font-weight: 800;
+    font-size: 2rem;
+    color: #23FF07;
+}
+
+.description__greet {
+    font-family: "Adobe Clean UX";
+    color: #688184;
+    font-weight: 500;
+    text-overflow: clip;
+    width: 470px;
+    padding-left: 2rem;
+}
+
+.button__greet {
+    width: 10rem;
+    height: 3rem;
+    background-color: #4b1eee;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 24px 74px rgb(60 0 189 / 20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.btn__icon {
+    display: block;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+    position: relative;
+    top: 0.5rem;
+    transition: .3s;
+}
+
+.button__greet:hover .btn__icon {
+    transform: translateX(.25rem);
+}
+
+.greet__button {
+    position: relative;
+    top: 6rem;
+}
+
+@media (min-width: 280px) and (max-width: 375px) {
+	.greet__backgorund {
+		width: 20rem;
+    margin-left: -1rem;
+	}
+
+	.greet-main {
+    width: 100%;
+    height: 350px;
+    margin-top: 1rem;
+    margin-left: 0.3rem;
+    border-radius: 15px;
+	}
+
+	.greet__text {
+		position: absolute;
+    top: 24rem;
+    width: 19rem;
+    text-align: center;
+    margin: auto;
+	}
+
+	.description__greet {
+		font-family: "Adobe Clean UX";
+    color: #688184;
+    font-weight: 500;
+    text-overflow: clip;
+    width: auto;
+		padding-left: 0;
+	}
+
+	.greet__button {
+		top: 10rem;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+	.greet__text {
+		position: absolute;
+    	top: 24rem;
+    	width: 23rem;
+    	text-align: center;
+    	margin: auto;
+	}
+
+	.greet-main {
+		width: 100%;
+    	height: 350px;
+    	margin-top: 1rem;
+    	border-radius: 15px;
+	}
+
+	.title__greet {
+		font-weight: 600;
+    	margin-bottom: 1rem;
+    	margin-left: 0rem;
+    	width: auto;
+	}
+
+	.description__greet {
+		font-family: "Adobe Clean UX", "Open Sans", sans-serif;
+    	color: #688184;
+    	font-weight: 500;
+    	text-overflow: clip;
+    	width: auto;
+    	padding-left: 0rem;
+    	margin-left: 0rem;
+	}
+
+	.greet__button {
+		position: relative;
+    	top: 10rem;
+	}
+}
